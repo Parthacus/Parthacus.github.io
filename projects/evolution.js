@@ -6,7 +6,7 @@ async function getText(){
   final_word = document.getElementById('final_string').value;
   function randomstring(length) {
     var text = "";
-    var possible = "abcdefghijklmnopqrstuvwxyz0123456789 ";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 ";
     for (var i = 0; i < length; i++)
       text += possible.charAt(Math.floor(Math.random() * possible.length));
 
@@ -81,7 +81,7 @@ while (best_word != final_word){
   for (fitness_level in fitness){
     for (i = 0; i < fitness[fitness_level]; i++ ){
       possible_parents.push(elements[fitness_level]);
-      console.log(elements[fitness_level])
+
     }
   }
   console.log(possible_parents);
@@ -104,7 +104,7 @@ while (best_word != final_word){
     }
     elements.push(child)
   }
-  await sleep(25);
+  await sleep(50);
 update(generation , best_word, elements);
 }
 }
