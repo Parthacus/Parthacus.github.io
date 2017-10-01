@@ -18,7 +18,7 @@ async function getText(){
     document.getElementById("generation").innerHTML = "Generation " +  generation + " :";
     var final_string = "";
     var space = "&nbsp;";
-    for (word = 0; word <= elements.length - 5; word += 5){
+    for (word = 0; word <= elements.length - 6; word += 5){
       final_string += elements[word] + space  + elements[word + 1] + space  + elements[word + 2] + space  + elements[word + 3]+ space  + elements[word + 4] + space  + elements[word + 5] + "<br>";
     }
     document.getElementById("elements").innerHTML = final_string
