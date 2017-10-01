@@ -1,17 +1,39 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="UTF-8" />
-<title>Darwinian Words Generator</title>
-</head>
-<body>
-Words: <input type="text" id="final_string">
-<button type="button" onclick="getText()">Generate</button><br>
-<h3 id="generation">Generation:</h3>
-<h1 id="best_word">Best Word in Generation</h1>
-<br>
-<h6 id="elements"></h6>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <body>
+
+    <ul id="javascriptprojects" class="dropdown-content">
+      <li><a href="www.parthacus.github.io/projects/darwinian_words.html">Genetic Words</a></li>
+      <li><a href="#!">Predators</a></li>
+    </ul>
+    <ul id="pythonprojects" class="dropdown-content">
+      <li><a href="#!">Naive Bayes</a></li>
+    </ul>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">&nbsp;&nbsp;Parth</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="dropdown-button" href="#!" data-activates="javascriptprojects">JavaScript</a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="pythonprojects">Python</a></li>
+          <li><a href="www.abc.xyz">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+<div class="input-field col s6" style="width:600px; margin:0 auto;text-align:center;">
+  <br>
+  <input placeholder="Text to Evolve to" id="final_string" type="text" class="validate" style="text-align:center">
+<button class="btn waves-effect waves-light" type="button" onclick="getText()">Generate</button><br><br>
+</div>
+<h3 id="generation" style="text-align:center">Generation:</h3><br>
+<h1 id="best_word" style="text-align:center">Best Word in Generation</h1><br>
+<h6 id="elements"style="text-align:center" ></h6>
 <script src="evolution.js">
 </script>
+
 </body>
 </html>
