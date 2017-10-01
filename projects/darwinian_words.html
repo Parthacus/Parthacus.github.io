@@ -1,29 +1,47 @@
 <!doctype html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-  <body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <ul id="javascriptprojects" class="dropdown-content">
-      <li><a href="">Genetic Words</a></li>
-      <li><a href="#!">Predators</a></li>
-    </ul>
-    <ul id="pythonprojects" class="dropdown-content">
-      <li><a href="#!">Naive Bayes</a></li>
-    </ul>
-    <nav>
+<body>
+  <!--Javascript projects-->
+  <ul id="javascriptprojects" class="dropdown-content" style = "font-family: 'Raleway';">
+    <li><a href="">Genetic Words</a></li>
+    <li><a href="#!">Predators</a></li>
+  </ul>
+  <!--Python projects-->
+  <ul id="pythonprojects" class="dropdown-content"  style = "font-family: 'Raleway';">
+    <li><a href="#!">Naive Bayes</a></li>
+  </ul>
+
+  <nav  style = "font-family: 'Raleway';">
+    <div class="nav-wrapper">
+      <a href="../index.html" class="brand-logo" style = "font-family: 'Raleway';">&nbsp;&nbsp;Parth</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="dropdown-button" href="#!" data-activates="javascriptprojects">JavaScript</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="pythonprojects">Python</a></li>
+        <li><a href="sass.html">About</a></li>
+      </ul>
+
       <div class="nav-wrapper">
-        <a href="../index.html" class="brand-logo">&nbsp;&nbsp;Parth</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a class="dropdown-button" href="#!" data-activates="javascriptprojects">JavaScript</a></li>
-          <li><a class="dropdown-button" href="#!" data-activates="pythonprojects">Python</a></li>
-          <li><a href="www.abc.xyz">About</a></li>
-        </ul>
-      </div>
-    </nav>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a class="dropdown-button" href="#!" data-activates="javascriptprojects">JavaScript</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="pythonprojects">Python</a></li>
+        <li><a href="sass.html">About</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="../materialize.js"></script>
+<script src="../side_nav.js"></script>
+
+
 
 <div class="input-field col s6" style="width:400px; margin:0 auto;text-align:center;">
   <br>
